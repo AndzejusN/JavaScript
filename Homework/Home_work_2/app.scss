@@ -1,0 +1,82 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+$table-bg: #eeeeee;
+$plan-header-bg: #fff;
+$single-table-bg: #fff;
+$table-header: #080f1a;
+$table-border-color: lighten($plan-header-bg, 60%);
+$plan-price-bg: #f4f6fc;
+$plan-price-color: #f4f6fc;
+$plan-price-border: lighten($plan-header-bg, 20%);
+$button-one-color: #73829e !important;
+$button-border-color: #303ca5;
+$single-table-color: #080f1a;
+$all-color: #080f1a;
+
+body,
+h6,
+p,
+h4,
+span {
+  color: $all-color;
+}
+
+#pricing-tables {
+  background-color: $table-bg;
+  font-family: "Lato", regular;
+  margin: 30px 0;
+}
+
+.single-table {
+  background: $single-table-bg;
+  transition: all 0.2s linear;
+  &:hover {
+    box-shadow: 0px 3px 3px 0px #888888;
+    transition: all 0.2s linear;
+  }
+  & .plan-header {
+    background: $plan-header-bg;
+    color: $table-header;
+
+    padding: 2px 0;
+    & h6 {
+      margin: 0;
+      padding: 10px 10px;
+    }
+  }
+  & .plan-price {
+    background: $plan-price-bg;
+    padding: 10px 0;
+    margin: 0;
+    @include border-radius(50px);
+    font-size: 30px;
+    border-top: 2px solid $plan-price-border;
+    font-weight: bold;
+    & span {
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+  & ul {
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+    & li {
+      padding: 8px 0;
+      margin: 0 20px;
+      border-bottom: 1px solid $table-border-color;
+      font-size: 15px;
+    }
+  }
+  & .button-one {
+    display: inline-block;
+    margin: 20px 0 30px 0;
+    padding: 10px 40px;
+    border: 3px solid $button-border-color;
+    @include border-radius(5px);
+    font-size: 15px;
+    text-decoration: none;
+    color: $button-one-color;
+  }
+}

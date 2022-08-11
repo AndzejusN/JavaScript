@@ -1,0 +1,19 @@
+/*body {
+	height: 1px;
+	border: 1px solid red;
+}
+*/
+#main {
+
+	height: 700px;
+	width: 700px;
+
+	    overflow-x: auto;
+
+	background-color: purple;
+}
+
+#main > div {
+	height: 100500px;
+	width: 100500px;
+}

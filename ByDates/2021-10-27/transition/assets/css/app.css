@@ -1,0 +1,38 @@
+.gallery {
+	width: 500px;
+	height: 500px;
+
+	border: 1px solid red;
+}
+
+.gallery > .gallery-item {
+	width: 100%;
+	height: 100%;
+
+	display: none;
+}
+
+.gallery > .gallery-item img {
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}
+
+.gallery > .active {
+	display: block !important;
+}
+
+/*.fade {  
+    animation-name: fade;  
+    animation-duration: 1.5s;  
+}  
+
+@keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  */

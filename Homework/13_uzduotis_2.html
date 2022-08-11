@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>13_uzduotis</title>
+
+<style>
+
+.container{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		margin: 1;
+		}
+
+.first{
+	background-color: orange;
+	height: 30px;
+	margin: 3px;
+	}
+
+.second{
+	background-color: yellowgreen;;
+	height: 50px;
+	margin: 3px;
+	}
+
+.third{
+	background-color: blue;
+	height: 100px;
+	margin: 3px;
+	}
+
+.fourth{
+	display:  none;
+	background-color: grey;
+	height: 30px;
+	margin: 3px;
+	}
+
+
+
+	@media only screen and (min-width: 786px){
+   
+ .fourth{
+ 	display: inline-flex;
+ 	width: 48.9%;
+ 	justify-content: space-between;
+ }
+	}
+
+    @media only screen and (min-width: 1200px){
+	.block_1{
+		display: flex;
+		flex-direction: row;
+	}
+	.first {
+		flex-grow: 2;
+	}
+	.block_3{
+		display: flex;
+		flex-direction: row;
+	}
+	.third{
+		flex-grow: 3;
+	}
+
+    .block_4 > div{
+	display: flex;
+	flex-direction: row;
+	}
+   }
+
+</style>
+
+</head>
+
+<body>
+	<div class="container">
+
+	<div class="block_1">
+		<div class="first">1</div>
+		<div class="first">2</div>
+	</div>
+
+	<div class="block_2">
+		<div class="second">3</div>
+	</div>
+
+	<div class="block_3">
+		<div class="third">4</div>
+		<div class="third">5</div>
+		<div class="third">6</div>
+	</div>
+
+	<div class="block_4">
+
+	<div>
+		<div class="fourth">7</div>
+		<div class="fourth">8</div>
+		<div class="fourth">9</div>
+		<div class="fourth">10</div>
+	</div>
+	</div>
+
+	</div>
+
+
+</body>
+</html>

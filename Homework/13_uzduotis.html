@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>13_uzduotis</title>
+
+<style>
+
+.container{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		margin: 1;
+		}
+
+.first{
+	background-color: orange;
+	height: 30px;
+	margin: 3px;
+	}
+
+.second{
+	background-color: yellowgreen;;
+	height: 50px;
+	margin: 3px;
+	}
+
+.third{
+	background-color: blue;
+	height: 100px;
+	margin: 3px;
+	}
+
+.fourth{
+	background-color: grey;
+	height: 30px;
+	margin: 3px;
+	}
+.hidden_1{
+	display: none;
+	}
+
+
+	@media only screen and (min-width: 786px){
+   .block_4 > div{
+   	display: flex;
+   }
+   .fourth_1 {
+   	flex-direction: row;
+   	flex-grow: 2;
+   }
+   .fourth_2 {
+   	flex-direction: row;
+   	flex-grow: 2;
+   }
+
+	}
+
+    @media only screen and (min-width: 1200px){
+	.block_1{
+		display: flex;
+		flex-direction: row;
+	}
+	.first {
+		flex-grow: 2;
+	}
+	.block_3{
+		display: flex;
+		flex-direction: row;
+	}
+	.third{
+		flex-grow: 3;
+	}
+
+
+	.block_4 > div{
+		display: none;
+	}
+    
+    .hidden_1{
+	display: flex;
+	flex-direction: row;
+	}
+	.fourth_3 {
+	flex-grow: 4;
+   	}
+   }
+
+</style>
+
+</head>
+
+<body>
+	<div class="container">
+
+	<div class="block_1">
+		<div class="first">1</div>
+		<div class="first">2</div>
+	</div>
+
+	<div class="block_2">
+		<div class="second">3</div>
+	</div>
+
+	<div class="block_3">
+		<div class="third">4</div>
+		<div class="third">5</div>
+		<div class="third">6</div>
+	</div>
+
+	<div class="block_4">
+
+	<div>
+		<div class="fourth fourth_1">7</div>
+		<div class="fourth fourth_1">8</div>
+	</div>
+
+	<div>
+		<div class="fourth fourth_2">9</div>
+		<div class="fourth fourth_2">1</div>
+	</div>
+	</div>
+
+		<div class="hidden_1">
+		<div class="fourth fourth_3">7</div>
+		<div class="fourth fourth_3">8</div>
+		<div class="fourth fourth_3">9</div>
+		<div class="fourth fourth_3">1</div>
+		</div>
+
+	</div>
+
+
+</body>
+</html>
